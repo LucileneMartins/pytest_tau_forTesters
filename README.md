@@ -12,5 +12,5 @@ Asserts - [link here](https://docs.pytest.org/en/stable/how-to/assert.html)
 
 ## Commands
 
-To run tests from the command line
+To run tests from the command line </br>
 $ python -m pytest
