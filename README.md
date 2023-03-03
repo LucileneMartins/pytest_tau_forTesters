@@ -8,7 +8,10 @@ and help testers to code ❤️
 ## Tips 
 
 Pytest - [course](https://testautomationu.applitools.com/pytest-tutorial/) </br>
-Asserts - [link here](https://docs.pytest.org/en/stable/how-to/assert.html)
+Asserts - [link here](https://docs.pytest.org/en/stable/how-to/assert.html) </br>
+Parametrized fixtures - [link here](https://docs.pytest.org/en/stable/how-to/parametrize.html#parametrize-basics) </br>
+Parametrizing Tests- [link here](https://docs.pytest.org/en/stable/example/parametrize.html#paramexamples)</br>
+Python Decorators - [link here](https://realpython.com/primer-on-python-decorators/) </br>
 
 ## Commands
 
