@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="1" failures="3" skipped="0" tests="12" time="0.124" timestamp="2023-03-09T19:49:13.316650" hostname="lucilene-Vostro-15-3515"><testcase classname="tests.test_div_by_0" name="test_divisible_by_3" time="0.003" /><testcase classname="tests.test_div_by_0" name="test_divisible_by_6" time="0.002"><failure message="assert (39 % 6) == 0">input_value = 39
+
+    def test_divisible_by_6(input_value):
+&gt;       assert input_value % 6 == 0
+E       assert (39 % 6) == 0
+
+tests/test_div_by_0.py:9: AssertionError</failure></testcase><testcase classname="tests.test_div_by_13" name="test_divisible_by_13" time="0.001" /><testcase classname="tests.test_fruit" name="test_my_fruit_in_basket" time="0.001"><error message="failed on setup with &quot;file /home/lucilene/Documents/PersonalProjects/unitTest_Project/pytest_tau_forTesters/tests/test_fruit.py, line 21&#10;  def test_my_fruit_in_basket(my_fruit, fruit_basket):&#10;E       fixture 'my_fruit' not found&#10;&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, input_value, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory&#10;&gt;       use 'pytest --fixtures [testpath]' for help on them.&#10;&#10;/home/lucilene/Documents/PersonalProjects/unitTest_Project/pytest_tau_forTesters/tests/test_fruit.py:21&quot;">file /home/lucilene/Documents/PersonalProjects/unitTest_Project/pytest_tau_forTesters/tests/test_fruit.py, line 21
+  def test_my_fruit_in_basket(my_fruit, fruit_basket):
+E       fixture 'my_fruit' not found
+&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, input_value, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+&gt;       use 'pytest --fixtures [testpath]' for help on them.
+
+/home/lucilene/Documents/PersonalProjects/unitTest_Project/pytest_tau_forTesters/tests/test_fruit.py:21</error></testcase><testcase classname="tests.test_math" name="test_math_check" time="0.002" /><testcase classname="tests.test_math" name="test_sum" time="0.002" /><testcase classname="tests.test_math" name="test_division_by_zero" time="0.002" /><testcase classname="tests.test_math" name="test_function" time="0.002"><failure message="assert 3 == 4&#10; +  where 3 = f()">def test_function():
+&gt;       assert f() == 4
+E       assert 3 == 4
+E        +  where 3 = f()
+
+tests/test_math.py:27: AssertionError</failure></testcase><testcase classname="tests.test_math" name="test_set_comparison" time="0.002"><failure message="AssertionError: assert {'0', '1', '3', '8'} == {'0', '3', '5', '8'}&#10;  Extra items in the left set:&#10;  '1'&#10;  Extra items in the right set:&#10;  '5'&#10;  Use -v to get more diff">def test_set_comparison():
+        set1 = set("1308")
+        set2 = set("8035")
+&gt;       assert set1 == set2
+E       AssertionError: assert {'0', '1', '3', '8'} == {'0', '3', '5', '8'}
+E         Extra items in the left set:
+E         '1'
+E         Extra items in the right set:
+E         '5'
+E         Use -v to get more diff
+
+tests/test_math.py:33: AssertionError</failure></testcase><testcase classname="tests.test_param" name="test_multiply[3-3-9]" time="0.003" /><testcase classname="tests.test_param" name="test_multiply[2-2-4]" time="0.001" /><testcase classname="tests.test_param" name="test_multiply[26-2-52]" time="0.001" /></testsuite></testsuites>
