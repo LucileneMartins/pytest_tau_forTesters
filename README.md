@@ -13,26 +13,50 @@ Parametrized fixtures - [link here](https://docs.pytest.org/en/stable/how-to/par
 Parametrizing Tests- [link here](https://docs.pytest.org/en/stable/example/parametrize.html#paramexamples)</br>
 Python Decorators - [link here](https://realpython.com/primer-on-python-decorators/) </br>
 Arrange-Act-Assert - [link here](https://jamescooke.info/arrange-act-assert-pattern-for-python-developers.html) </br>
+Report HTML - [link here](https://github.com/pytest-dev/pytest-html)</br>
+Parallel tests - [link here](https://pytest-xdist.readthedocs.io/en/stable/)
+
 
 ## Commands
 
 To run tests from the command line </br>
-$ python -m pytest
+$ python -m pytest </br>
 
-To run particular test case 
-$ pytest -k testCaseName 
+To run particular test Module </br>
+$ python -m pytest tests/nameModule.py </br>
 
-To run with verbose and receive the output passed / failed 
-$ python -m pytest -v 
+To run particular test case </br>
+$ python -m pytest tests/nameModule.py::test_scenario_name </br>
 
-to run and doesn't print the top banner like each status for each test module
-$ python -m pytest -q
+To run test case that contains the name a substring ( in this case one is the substring) </br>
+$ python -m pytest -k one </br>
 
-To run until one test case failure 
-$ python -m pytest -x
+To run with verbose and receive the output passed / failed  </br>
+$ python -m pytest -v </br>
 
-To run until a certain number of failures 
-$python -m pytest --maxfail=3
+to run and doesn't print the top banner like each status for each test module </br>
+$ python -m pytest -q </br>
 
-To run and generate report xml 
-$ python -m pytest --junit-xml report.xml
+To run until one test case failure  </br>
+$ python -m pytest -x </br>
+
+To run until a certain number of failures </br>
+$python -m pytest --maxfail=3 </br>
+ 
+To run and generate report xml  </br>
+$ python -m pytest --junit-xml report.xml </br>
+
+To run and generate report html  </br>
+first you need to install the report html pluggin : pip install pytest-html </br> 
+$ python -m pytest --html=report.html </br>
+
+To run and check the modules coverage </ br>
+first you need to install the pluggin : pip install pytest-cov </ br>
+$ python -m pytest --cov=stuff </br>
+
+To run the coverage and generate report html </ br>
+$ python -m pytest --cov=src/stuff --cov-report html </ br>
+
+To run parallel tests </br>
+First you will need to install the pluggin : pip install pytest-xdist</br>
+$ python -m pytest -n 3  </br>
