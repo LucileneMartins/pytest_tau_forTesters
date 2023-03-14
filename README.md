@@ -19,7 +19,7 @@ Parallel tests - [link here](https://pytest-xdist.readthedocs.io/en/stable/)
 
 ## Commands
 
-To run tests from the command line </br>
+:bulb: To run tests from the command line </br>
 $ python -m pytest </br>
 
 To run particular test Module </br>
