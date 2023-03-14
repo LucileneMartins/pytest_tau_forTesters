@@ -50,13 +50,13 @@ To run and generate report html  </br>
 first you need to install the report html pluggin : pip install pytest-html </br> 
 $ python -m pytest --html=report.html </br>
 
-To run and check the modules coverage </ br>
-first you need to install the pluggin : pip install pytest-cov </ br>
+To run and check the modules coverage </br>
+first you need to install the pluggin : pip install pytest-cov </br>
 $ python -m pytest --cov=stuff </br>
 
-To run the coverage and generate report html </ br>
-$ python -m pytest --cov=src/stuff --cov-report html </ br>
+To run the coverage and generate report html </br>
+$ python -m pytest --cov=src/stuff --cov-report html </br>
 
 To run parallel tests </br>
-First you will need to install the pluggin : pip install pytest-xdist</br>
+First you will need to install the pluggin : pip install pytest-xdist </br>
 $ python -m pytest -n 3  </br>
