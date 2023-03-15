@@ -22,41 +22,41 @@ Parallel tests - [link here](https://pytest-xdist.readthedocs.io/en/stable/)
 :bulb: To run tests from the command line </br>
 $ python -m pytest </br>
 
-To run particular test Module </br>
+:bulb: To run particular test Module </br>
 $ python -m pytest tests/nameModule.py </br>
 
-To run particular test case </br>
+:bulb: To run particular test case </br>
 $ python -m pytest tests/nameModule.py::test_scenario_name </br>
 
-To run test case that contains the name a substring ( in this case one is the substring) </br>
+:bulb: To run test case that contains the name a substring ( in this case one is the substring) </br>
 $ python -m pytest -k one </br>
 
-To run with verbose and receive the output passed / failed  </br>
+:bulb: To run with verbose and receive the output passed / failed  </br>
 $ python -m pytest -v </br>
 
-to run and doesn't print the top banner like each status for each test module </br>
+:bulb: to run and doesn't print the top banner like each status for each test module </br>
 $ python -m pytest -q </br>
 
-To run until one test case failure  </br>
+:bulb: To run until one test case failure  </br>
 $ python -m pytest -x </br>
 
-To run until a certain number of failures </br>
+:bulb: To run until a certain number of failures </br>
 $python -m pytest --maxfail=3 </br>
  
-To run and generate report xml  </br>
+:bulb: To run and generate report xml  </br>
 $ python -m pytest --junit-xml report.xml </br>
 
-To run and generate report html  </br>
+:bulb: To run and generate report html  </br>
 first you need to install the report html pluggin : pip install pytest-html </br> 
 $ python -m pytest --html=report.html </br>
 
-To run and check the modules coverage </br>
+:bulb: To run and check the modules coverage </br>
 first you need to install the pluggin : pip install pytest-cov </br>
 $ python -m pytest --cov=stuff </br>
 
-To run the coverage and generate report html </br>
+:bulb: To run the coverage and generate report html </br>
 $ python -m pytest --cov=src/stuff --cov-report html </br>
 
-To run parallel tests </br>
+:bulb: To run parallel tests </br>
 First you will need to install the pluggin : pip install pytest-xdist </br>
 $ python -m pytest -n 3  </br>
